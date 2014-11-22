@@ -3,9 +3,9 @@
  * 
  * @author	Derek Brown
  *
- * Purpose:	To determine if there exists a single edge that you can add to the
- * 			graph that would make it strongly connected and if such an edge
- * 			exists, display it.
+ * Purpose:	To determine if there exists a single edge that you can add to
+ *		the graph that would make it strongly connected and if such an
+ *		edge exists, display it.
  */
 
 import java.util.Scanner;
@@ -55,7 +55,7 @@ public class OneWay {
 	/**
 	 * DFS helper function.
 	 * 
-	 * @param v		The vertex to be processed.
+	 * @param v	The vertex to be processed.
 	 * @param graph	The graph the traversal will be performed on.
 	 */
 	public void DFS( int v, int[][] graph ) {
@@ -94,11 +94,12 @@ public class OneWay {
 	
 	/**
 	 * The main algorithm for solving the problem,  Counts the number of
-	 * strongly connected components in the original graph and then the number
-	 * of strongly connected components in the transpose of the graph,
+	 * strongly connected components in the original graph and then the
+	 * number of strongly connected components in the transpose of the
+	 * graph.
 	 * 
 	 * @return	True, if one of the counts == 1 and the other == 2,
-	 * 			False, otherwise.
+	 * 		False, otherwise.
 	 */
 	public boolean numStrongComps() {
 		for( int s = 1 ; s <= size ; s++ ) {
@@ -129,8 +130,8 @@ public class OneWay {
 	}//end numStrongComps
 
 	/**
-	 * The main logic for the program, Reads input from the user, creates the
-	 * adjacency list, and then runs the numStrongComponents algorithm.
+	 * The main logic for the program, Reads input from the user, creates
+	 * the adjacency list, and then runs the numStrongComponents algorithm.
 	 * 
 	 * @param args	Command line arguments, unused.
 	 */
